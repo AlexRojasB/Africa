@@ -1,2 +1,2 @@
 # Africa
-Africa is a fruit encyclopedia app done in the SwiftUI Masterclass course on Udemy  Topics Resources
+Africa is a animal catalog app done in the SwiftUI Masterclass course on Udemy  Topics Resources
