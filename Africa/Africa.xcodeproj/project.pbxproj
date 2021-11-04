@@ -51,6 +51,7 @@
 		F4B350292733BBD70075F8E1 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B350282733BBD70075F8E1 /* Stickers.xcassets */; };
 		F4B3502D2733BBD70075F8E1 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F4B350262733BBD00075F8E1 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F4B350332733BE500075F8E1 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B350322733BE500075F8E1 /* CreditsView.swift */; };
+		F4B3503627342B040075F8E1 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B3503527342B040075F8E1 /* CenterModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,8 @@
 		F4B350282733BBD70075F8E1 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		F4B3502A2733BBD70075F8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4B350322733BE500075F8E1 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		F4B3503527342B040075F8E1 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
+		F4B3503727342F2E0075F8E1 /* Stickers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Stickers.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,7 @@
 		A5729A0B26EC079E00148554 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				F4B3503427342AE00075F8E1 /* Modifiers */,
 				A5ADF07C26FC195A007BEBCB /* Helper */,
 				A5729A4826EC332700148554 /* Extension */,
 				A5729A4526EC31E500148554 /* Model */,
@@ -273,10 +277,19 @@
 		F4B350272733BBD00075F8E1 /* Stickers */ = {
 			isa = PBXGroup;
 			children = (
+				F4B3503727342F2E0075F8E1 /* Stickers.entitlements */,
 				F4B350282733BBD70075F8E1 /* Stickers.xcassets */,
 				F4B3502A2733BBD70075F8E1 /* Info.plist */,
 			);
 			path = Stickers;
+			sourceTree = "<group>";
+		};
+		F4B3503427342AE00075F8E1 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F4B3503527342B040075F8E1 /* CenterModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +428,7 @@
 				F4B350332733BE500075F8E1 /* CreditsView.swift in Sources */,
 				A5729A3F26EC2D0F00148554 /* GalleryView.swift in Sources */,
 				A5174DB127055B920096C714 /* MotionAnimationView.swift in Sources */,
+				F4B3503627342B040075F8E1 /* CenterModifier.swift in Sources */,
 				A5729A8A26ED2F2900148554 /* HeadingView.swift in Sources */,
 				A5ADF07B26FC1863007BEBCB /* VideoPlayerView.swift in Sources */,
 			);
@@ -596,6 +610,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = Stickers/Stickers.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N74PUSUB38;
@@ -607,6 +622,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexrojasb.swiftuimasterclass.Africa.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -617,6 +633,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = Stickers/Stickers.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N74PUSUB38;
@@ -628,6 +645,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexrojasb.swiftuimasterclass.Africa.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
